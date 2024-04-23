@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  zimbra:
+    build: .
+    hostname: ${HOSTNAME}
+    environment:
+      PASSWORD: ${PASSWORD}
+    ports:
+      - 25:25
+      - 443:443
+      - 7071:7071
